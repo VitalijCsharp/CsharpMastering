@@ -1,0 +1,16 @@
+Project: Forex Broker Simulator
+Description:
+In order to 'Enter to IT' please create the software similar to Metaquotes Terminal.
+It should contains the following parts/features:
+* Backend:
+	* SQL Server Database to store user accounts, supported symbols, symbols info etc;
+	* API to get list of supported instruments;
+	* API to get candles (it should generate random candles, but in adequote range to get nice chart)
+	* API to subscribe for ticks (it should generate random ticks, but in adequote range to get nice chart)
+	* API to create/read/update/delete orders
+	* API to subscribe for orders updates (for exmaple in case SL or TP hit, it should nofity clients)
+* Frontend:
+	* Login form
+	* Charts (select symbol like in MT4 opens chart)
+	* Orders pane (like MT4 Trade tab) with Delete order button
+	* Create/Modify order form
