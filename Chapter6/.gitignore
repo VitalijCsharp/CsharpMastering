@@ -361,9 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/Chapter6/MathsOperators/MathsOperators/Assets
-/Chapter6/MathsOperators/MathsOperators/Properties
-/Chapter6/MathsOperators/MathsOperators/App.xaml
-/Chapter6/MathsOperators/MathsOperators/App.xaml.cs
-/Chapter6/MathsOperators/MathsOperators/ApplicationInsights.config
-/Chapter6/MathsOperators/MathsOperators/Package.appxmanifest
