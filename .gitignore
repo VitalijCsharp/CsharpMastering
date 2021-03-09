@@ -367,3 +367,7 @@ FodyWeavers.xsd
 /Chapter6/MathsOperators/MathsOperators/App.xaml.cs
 /Chapter6/MathsOperators/MathsOperators/ApplicationInsights.config
 /Chapter6/MathsOperators/MathsOperators/Package.appxmanifest
+/Chapter7/Classes/Classes/App.config
+/Chapter7/Classes/Classes/Properties/AssemblyInfo.cs
+/Chapter7/Class/App.config
+/Chapter7/Class/Properties/AssemblyInfo.cs
