@@ -33,10 +33,8 @@ namespace Classes
             this.y = -1;
             counter++;
         }
-        public static int GetCounter()
-        {
-            return counter;
-        }
+        public static int GetCounter() => counter;
+       
         public double DistanceTo(Point other)
         {
             //return  Math.Pow((Math.Pow(Math.Abs(other.x - x), 2) + Math.Pow(Math.Abs(other.y - y), 2)), 0.5);
