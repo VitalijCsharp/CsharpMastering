@@ -373,3 +373,14 @@ FodyWeavers.xsd
 /Chapter7/Class/Properties/AssemblyInfo.cs
 /Chapter8/Parameters/Parameters/Properties/AssemblyInfo.cs
 /Chapter8/Parameters/Parameters/App.config
+/Chapte11/ParamsArray/Properties
+*.config
+/Chapter12/ExtensionMethod/ExtensionMethod/Properties
+/Chapter12/InheritanceVirtualMethod/Properties
+/Chapter12/Vehicles/Vehicles/Properties
+/Chapter13/Drawing/Drawing/Assets
+/Chapter13/Drawing/Drawing/Properties
+/Chapter13/Drawing Using Interfaces/Drawing/Assets
+/Chapter13/Drawing Using Interfaces/Drawing/Properties
+/Chapter13/Drawing Using Interfaces/Drawing/App.xaml
+/Chapter13/Drawing Using Interfaces/Drawing/App.xaml.cs
