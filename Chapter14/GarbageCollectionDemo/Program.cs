@@ -12,9 +12,11 @@ namespace GarbageCollectionDemo
         {
             using (Calculator calc = new Calculator())
             {
-                Console.WriteLine($"120/0 = {calc.Divide(120, 0)}"); 
+                //Console.WriteLine($"120/0 = {calc.Divide(120, 0)}"); 
             }
             Console.WriteLine("Program finishing");
+
+            AvtoGenDispose Avto = new AvtoGenDispose();
         }
     }
 }
