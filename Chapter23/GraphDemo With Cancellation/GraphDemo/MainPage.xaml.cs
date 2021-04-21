@@ -72,7 +72,8 @@ namespace GraphDemo
                 duration.Text = oce.Message;
             }
 
-            string text = $"First task status is{first.Status}, Second task status is";
+
+            string text = $"First task status is{first.Status}, Second task status is{second.Status}";
             message.Text = text;
 
             // Display the data by using the bitmap
