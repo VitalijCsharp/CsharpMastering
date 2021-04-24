@@ -7,15 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
-        <Grid Margin ="10,20,10,20">
+    <Grid Style="{StaticResource GridStyle}">
+        <Grid x:Name="customersTabularView" Margin="10,20,10,20" Visibility="Visible">
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="2*"/>                
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="Adventure Works Customers" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="50"/>
+            <TextBlock Grid.Row="0" Style="{StaticResource  TabularHeaderStyle}" Text="Adventure Works Customers"/>
             <Grid Grid.Row ="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -37,10 +37,10 @@
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="ID" VerticalAlignment="Center" FontSize="20"/>
-                <TextBlock Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Titile" VerticalAlignment="Center" FontSize="20"/>
-                <TextBlock Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Center" FontSize="20"/>
-                <TextBlock Grid.Row="0" Grid.Column="7" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Center" FontSize="20"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" Style="{StaticResource LabelStyle}" Text="ID"/>
+                <TextBlock Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelStyle}" Text="Titile"/>
+                <TextBlock Grid.Row="0" Grid.Column="5" Style="{StaticResource LabelStyle}" Text="First Name"/>
+                <TextBlock Grid.Row="0" Grid.Column="7" Style="{StaticResource LabelStyle}" Text="Last Name" VerticalAlignment="Center"/>
                 <TextBox Grid.Row="1" Grid.Column="1" x:Name="id" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20" IsReadOnly="True"/>
                 <TextBox Grid.Row="1" Grid.Column="7" x:Name="firstName" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
                 <TextBox Grid.Row="1" Grid.Column="5" x:Name="secondName" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
@@ -52,9 +52,108 @@
                 </ComboBox>
                 <TextBox Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="5" x:Name="email" HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="400" FontSize="20"/>
                 <TextBox Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="3" x:Name="phone" HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" FontSize="20"/>
-                <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Text="Email" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
-                <TextBlock Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource LabelStyle}" Text="Email"/>
+                <TextBlock Grid.Row="5" Grid.Column="1" Style="{StaticResource LabelStyle}" Text="Phone"/>
             </Grid>
-        </Grid>        
+        </Grid>
+        <Grid x:Name="customersColumnarViewV" Margin="10,20,10,20" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource ColumnarHeaderStyle} Text="Customers"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="ID"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Titile"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="First Name"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Last Name"/>
+            <TextBlock Grid.Row="9" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Email"/>
+            <TextBlock Grid.Row="11" Grid.Column="0"Style="{StaticResource LabelStyle}" Text="Phone"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="idv" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20" IsReadOnly="True"/>
+            <TextBox Grid.Row="7" Grid.Column="1" x:Name="firstNamev" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
+            <TextBox Grid.Row="5" Grid.Column="1" x:Name="secondNamev" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
+            <ComboBox Grid.Row="3" Grid.Column="1" x:Name="titlev" HorizontalAlignment="Stretch" Text="" VerticalAlignment="Center" FontSize="20">
+                <ComboBoxItem Content="Mr"/>
+                <ComboBoxItem Content="Mrs"/>
+                <ComboBoxItem Content="Ms"/>
+                <ComboBoxItem Content="Miss"/>
+            </ComboBox>
+            <TextBox Grid.Row="9" Grid.Column="1"  x:Name="emailv" HorizontalAlignment="Stretch" Text="" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
+            <TextBox Grid.Row="11" Grid.Column="1" x:Name="phonev" HorizontalAlignment="Stretch" Text="" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
+        </Grid>
+        <Grid x:Name="customersColumnarView" Margin="10,20,10,20" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Style="{StaticResource ColumnarHeaderStyle}" Text="Customers"/>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>                
+                <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="ID"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Titile"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="First Name"/>
+                <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Last Name"/>
+                <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Email"/>
+                <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Phone"/>
+                <TextBox Grid.Row="0" Grid.Column="1" x:Name="cId" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20" IsReadOnly="True"/>
+                <TextBox Grid.Row="2" Grid.Column="1" x:Name="cFirstName" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
+                <TextBox Grid.Row="3" Grid.Column="1" x:Name="cLastName" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
+                <ComboBox Grid.Row="1" Grid.Column="1" x:Name="cTitle" HorizontalAlignment="Stretch" Text="" VerticalAlignment="Center" FontSize="20">
+                    <ComboBoxItem Content="Mr"/>
+                    <ComboBoxItem Content="Mrs"/>
+                    <ComboBoxItem Content="Ms"/>
+                    <ComboBoxItem Content="Miss"/>
+                </ComboBox>
+                <TextBox Grid.Row="4" Grid.Column="1"  x:Name="cEmail" HorizontalAlignment="Stretch" Text="" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
+                <TextBox Grid.Row="5" Grid.Column="1" x:Name="cPhone" HorizontalAlignment="Stretch" Text="" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
+            </Grid>
+        </Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="TabularLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="660"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="customersColumnarView.Visibility" Value="Collapsed"/>
+                        <Setter Target="customersTabularView.Visibility" Value="Visible"/>
+                    </VisualState.Setters>
+                </VisualState>                
+                <VisualState x:Name="ColumnarLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target ="customersColumnarView.Visibility" Value ="Visible"/>
+                        <Setter Target ="customersTabularView.Visibility" Value ="Collapsed"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Grid>
 </Page>
