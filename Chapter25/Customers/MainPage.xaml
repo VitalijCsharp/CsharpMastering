@@ -41,17 +41,17 @@
                 <TextBlock Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelStyle}" Text="Titile"/>
                 <TextBlock Grid.Row="0" Grid.Column="5" Style="{StaticResource LabelStyle}" Text="First Name"/>
                 <TextBlock Grid.Row="0" Grid.Column="7" Style="{StaticResource LabelStyle}" Text="Last Name" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="1" Grid.Column="1" x:Name="id" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20" IsReadOnly="True"/>
-                <TextBox Grid.Row="1" Grid.Column="7" x:Name="firstName" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
-                <TextBox Grid.Row="1" Grid.Column="5" x:Name="secondName" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="id" Style="{StaticResource ControlSyle}" Text="" IsReadOnly="True"/>
+                <TextBox Grid.Row="1" Grid.Column="7" x:Name="firstName" Style="{StaticResource ControlSyle}" Text=""/>
+                <TextBox Grid.Row="1" Grid.Column="5" x:Name="secondName" Style="{StaticResource ControlSyle}" Text=""/>
                 <ComboBox Grid.Row="1" Grid.Column="3" x:Name="title" HorizontalAlignment="Stretch" Text="" VerticalAlignment="Center" FontSize="20">
                     <ComboBoxItem Content="Mr"/>
                     <ComboBoxItem Content="Mrs"/>
                     <ComboBoxItem Content="Ms"/>
                     <ComboBoxItem Content="Miss"/>
                 </ComboBox>
-                <TextBox Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="5" x:Name="email" HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="400" FontSize="20"/>
-                <TextBox Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="3" x:Name="phone" HorizontalAlignment="Left" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" FontSize="20"/>
+                <TextBox Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="5" x:Name="email" Style="{StaticResource ControlSyle}" Text=""/>
+                <TextBox Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="3" x:Name="phone" Style="{StaticResource ControlSyle}" Text=""/>
                 <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource LabelStyle}" Text="Email"/>
                 <TextBlock Grid.Row="5" Grid.Column="1" Style="{StaticResource LabelStyle}" Text="Phone"/>
             </Grid>
@@ -76,13 +76,13 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Customers" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="50"/>
-            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="ID" VerticalAlignment="Center" FontSize="20"/>
-            <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Titile" VerticalAlignment="Center" FontSize="20"/>
-            <TextBlock Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Center" FontSize="20"/>
-            <TextBlock Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Center" FontSize="20"/>
-            <TextBlock Grid.Row="9" Grid.Column="0" HorizontalAlignment="Center" Text="Email" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
-            <TextBlock Grid.Row="11" Grid.Column="0" HorizontalAlignment="Center" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource ColumnarHeaderStyle}" Text="Customers"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="ID"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Titile"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="First Name"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Last Name"/>
+            <TextBlock Grid.Row="9" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Email"/>
+            <TextBlock Grid.Row="11" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Phone"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="idv" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20" IsReadOnly="True"/>
             <TextBox Grid.Row="7" Grid.Column="1" x:Name="firstNamev" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
             <TextBox Grid.Row="5" Grid.Column="1" x:Name="secondNamev" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
@@ -120,18 +120,17 @@
                 <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Last Name"/>
                 <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Email"/>
                 <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelStyle}" Text="Phone"/>
-
-                <TextBox Grid.Row="0" Grid.Column="1" x:Name="cId" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20" IsReadOnly="True"/>
-                <TextBox Grid.Row="2" Grid.Column="1" x:Name="cFirstName" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
-                <TextBox Grid.Row="3" Grid.Column="1" x:Name="cLastName" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="20"/>
+                <TextBox Grid.Row="0" Grid.Column="1" x:Name="cId" Style="{StaticResource ControlSyle}" Text="" IsReadOnly="True"/>
+                <TextBox Grid.Row="2" Grid.Column="1" x:Name="cFirstName" Style="{StaticResource ControlSyle}" Text=""/>
+                <TextBox Grid.Row="3" Grid.Column="1" x:Name="cLastName" Style="{StaticResource ControlSyle}" Text="" />
                 <ComboBox Grid.Row="1" Grid.Column="1" x:Name="cTitle" HorizontalAlignment="Stretch" Text="" VerticalAlignment="Center" FontSize="20">
                     <ComboBoxItem Content="Mr"/>
                     <ComboBoxItem Content="Mrs"/>
                     <ComboBoxItem Content="Ms"/>
                     <ComboBoxItem Content="Miss"/>
                 </ComboBox>
-                <TextBox Grid.Row="4" Grid.Column="1"  x:Name="cEmail" HorizontalAlignment="Stretch" Text="" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
-                <TextBox Grid.Row="5" Grid.Column="1" x:Name="cPhone" HorizontalAlignment="Stretch" Text="" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
+                <TextBox Grid.Row="4" Grid.Column="1"  x:Name="cEmail" Style="{StaticResource ControlSyle}" Text=""/>
+                <TextBox Grid.Row="5" Grid.Column="1" x:Name="cPhone" Style="{StaticResource ControlSyle}" Text=""/>
             </Grid>
         </Grid>
         <VisualStateManager.VisualStateGroups>
@@ -144,8 +143,7 @@
                         <Setter Target="customersColumnarView.Visibility" Value="Collapsed"/>
                         <Setter Target="customersTabularView.Visibility" Value="Visible"/>
                     </VisualState.Setters>
-                </VisualState>
-                
+                </VisualState>                
                 <VisualState x:Name="ColumnarLayout">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
